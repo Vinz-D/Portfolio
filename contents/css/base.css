@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
-
-
 :root{
  --background-image:url(../../image/background.jpg);
  --font:"Comic Relief", system-ui;
  --border-all:20px;
  --button-toggleTheme-color: #e3e3e3;
  --side-color: #31363F;
-
-    
 }
 body{
     font-family: var(--font);
@@ -18,12 +14,10 @@ body{
     background-position: center bottom;
     justify-content: center;
     overflow: visible;
-
 }
 a {
   text-decoration: none;
 }
-
 [data-color-scheme=dark] {
     --background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../..//image/hinhnen.jpg);
     --side-color: #7d5866;
@@ -68,7 +62,4 @@ a {
         .header-under .inner-info .inner-status p{
         font-size: 17px !important;
     }
-    /* body {
-    background-size:auto;
-    } */
 }
