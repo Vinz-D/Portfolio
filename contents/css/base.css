@@ -2,7 +2,7 @@
 
 
 :root{
- --background-image:url(../../image/background.jpg);
+ --background-image:url(image/background.jpg);
  --font:"Comic Relief", system-ui;
  --border-all:20px;
  --button-toggleTheme-color: #e3e3e3;
@@ -25,7 +25,7 @@ a {
 }
 
 [data-color-scheme=dark] {
-    --background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(/image/hinhnen.jpg);
+    --background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(image/hinhnen.jpg);
     --side-color: #7d5866;
     --text-color: rgb(231, 233, 234);
     --link-color: #FA7070;
@@ -38,7 +38,7 @@ a {
     --hightlight:#916b96;
 }
 [data-color-scheme=light] {
-    --background-image: linear-gradient(rgba(101, 101, 101, .7), rgba(101, 101, 101, .7)), url(/image/hinhnen2.png);
+    --background-image: linear-gradient(rgba(101, 101, 101, .7), rgba(101, 101, 101, .7)), url(image/hinhnen2.png);
     --side-color: #d5d5d5;  
     --text-color: #070F2B;
     --link-color: #FA7070;
