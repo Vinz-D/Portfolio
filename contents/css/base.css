@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
+
+:root{
+ --background-image:url(../../image/background.jpg);
+ --font:"Comic Relief", system-ui;
+ --border-all:20px;
+ --button-toggleTheme-color: #e3e3e3;
+ --side-color: #31363F;
+
+    
+}
+body{
+    font-family: var(--font);
+    background-image:var(--background-image);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center bottom;
+    justify-content: center;
+    overflow: visible;
+
+}
+a {
+  text-decoration: none;
+}
+
+[data-color-scheme=dark] {
+    --background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(/image/hinhnen.jpg);
+    --side-color: #7d5866;
+    --text-color: rgb(231, 233, 234);
+    --link-color: #FA7070;
+    --selected-color: #F6F5F2;
+    --hover-background-color: #606470;
+    --button-toggleTheme-color:#e3e3e3 ;
+    --card-shadow: rgb(114, 102, 117) 0px 3px 6px, rgb(167, 88, 160) 0px 3px 6px;
+    --item-shadow: rgb(40, 42, 56) 0px 12px 24px, rgba(52, 57, 68, .9) 0px 12px 24px;
+    --button-color-scheme: #497582;
+    --hightlight:#916b96;
+}
+[data-color-scheme=light] {
+    --background-image: linear-gradient(rgba(101, 101, 101, .7), rgba(101, 101, 101, .7)), url(/image/hinhnen2.png);
+    --side-color: #d5d5d5;  
+    --text-color: #070F2B;
+    --link-color: #FA7070;
+    --selected-color: #03001C;
+    --hover-background-color: #606470;
+    --button-toggleTheme-color: #000000;
+    --card-shadow: rgba(0, 0, 0, .25) 0px 3px 6px, rgba(0, 0, 0, .22) 0px 3px 6px;
+    --item-shadow: rgb(139, 139, 139) 0px 12px 24px, rgba(219, 217, 217, .9) 0px 12px 24px;
+    --button-color-scheme: #6a9eae;
+    --hightlight: #efefef;
+}
+
+
+@media  (max-width: 578px){
+    .header-under .inner-avatar img {
+        width: auto;
+        height: 100px;
+        object-fit: cover;
+    }
+    .header-under .inner-avatar {
+         border: none !important;
+         width: 100px !important;
+    }
+    .header-under .inner-info .inner-name p{
+        font-size: 15px !important;
+    }
+        .header-under .inner-info .inner-status p{
+        font-size: 17px !important;
+    }
+    /* body {
+    background-size:auto;
+    } */
+}
