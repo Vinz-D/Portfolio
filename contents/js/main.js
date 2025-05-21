@@ -13,7 +13,7 @@ function hamOne() {
   const images = document.querySelectorAll(".avatar"); // class chung
     images.forEach(img => {
       // const newAvatar = images ==='/image/avatar.jpg' ? '/image/avatar2.jpg' : '/image/avatar.jpg';
-       img.src = img.src.includes('/image/avatar.jpg') ? '/image/avatar2.jpg' : '/image/avatar.jpg';
+       img.src = img.src.includes('image/avatar.jpg') ? 'image/avatar2.jpg' : 'image/avatar.jpg';
     });
 }
 
