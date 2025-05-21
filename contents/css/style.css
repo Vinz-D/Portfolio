@@ -214,7 +214,8 @@
 }
 
 .header-under .inner-contact a:hover{
-    color: var(--side-color); 
+    background-color: var(--text-color);
+    color: var(--side-color);
 }
 
 .header-under .inner-conntact-button .fa-brands{
