@@ -58,7 +58,66 @@ window.addEventListener('scroll', function() {
   } 
 });
 
+const filterItems = document.querySelectorAll("[data-filter-item]");
+const filterBtn = document.querySelectorAll("[data-filter-btn]");
+const selectItem = document.querySelectorAll("[data-select-item]");
+const selectValue = document.querySelector("[data-select-value]"); // Đã sửa từ "selecct"
+
+const filterFunc = function (selectedValue) {
+  filterItems.forEach(item => {
+    const category = item.dataset.category.toLowerCase();
+    const show = selectedValue === "all" || selectedValue === category;
+    item.classList.toggle("active", show);
+  });
+};
+
+// Lưu nút cuối cùng đã click (desktop)
+let lastClickedBtn = document.querySelector("[data-filter-btn].active");
+
+filterBtn.forEach(btn => {
+  btn.addEventListener("click", function () {
+    const selectedValue = this.innerText.toLowerCase();
+    filterFunc(selectedValue);
+
+    if (lastClickedBtn) lastClickedBtn.classList.remove("active");
+    this.classList.add("active");
+    lastClickedBtn = this;
+
+    // Đồng bộ dropdown (mobile)
+    if (selectValue) {
+      selectValue.innerText = this.innerText;
+    }
+  });
+});
+
+// Dropdown cho mobile
+selectItem.forEach(item => {
+  item.addEventListener("click", function () {
+    const selectedValue = this.innerText.toLowerCase();
+    filterFunc(selectedValue);
+
+    if (selectValue) {
+      selectValue.innerText = this.innerText;
+    }
+
+    // Cập nhật nút filter (desktop)
+    filterBtn.forEach(btn => {
+      const isMatch = btn.innerText.toLowerCase() === selectedValue;
+      btn.classList.toggle("active", isMatch);
+      if (isMatch) lastClickedBtn = btn;
+    });
+  });
+});
+
+
+const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 
 
+// sidebar variables
+const sidebar = document.querySelector("[data-sidebar]");
+const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+
+// sidebar toggle functionality for mobile
+sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 

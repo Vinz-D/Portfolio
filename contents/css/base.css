@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
 :root{
+ --scale: 0.8;
  --background-image:url(../../image/background.jpg);
  --font:"Comic Relief", system-ui;
  --border-all:20px;
@@ -8,12 +9,14 @@
  --transition-1: 0.25s ease;
  --transition-2: 0.5s ease-in-out;
 }
-body{  
+body{
+    margin: 0;
     font-family: var(--font);
     background-image:var(--background-image);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center bottom;
+    background-attachment: fixed; 
     justify-content: center;
     overflow: visible;
 }
@@ -36,6 +39,8 @@ li{
     --button-color-scheme: #497582;
     --hightlight:#916b96;
     --att:#926878;
+    --after-under: #FA7070;
+    --gray:hsla(0, 0%, 84%, 0.7);
 }
 [data-color-scheme=light] {
     --background-image: linear-gradient(rgba(101, 101, 101, .7), rgba(101, 101, 101, .7)), url(../../image/hinhnen2.png);
@@ -50,6 +55,8 @@ li{
     --button-color-scheme: #6a9eae;
     --hightlight: #efefef;
     --att:#efefef;
+    --after-under: #e7b25c;
+    --gray:#000000;
 }
 
 
