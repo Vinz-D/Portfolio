@@ -734,39 +734,8 @@
     margin-bottom: 15px;
 }
 
-@media (min-width: 450px) {
-
-  /**
-   * client
-   */
-
-  .clients-item { min-width: calc(33.33% - 10px); }
-
-
-
-  /**
-   * #PORTFOLIO, BLOG 
-   */
-
-  .project-img,
-  .blog-banner-box { height: auto; }
-
-}
 
 .project {
   padding: 0px;
 }
-.filter-select {
-    background: var(--eerie-black-2);
-    color: var(--light-gray);
-    display: flex
-;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 12px 16px;
-    border: 1px solid var(--jet);
-    border-radius: 14px;
-    font-size: var(--fs-6);
-    font-weight: var(--fw-300);
-}
+
