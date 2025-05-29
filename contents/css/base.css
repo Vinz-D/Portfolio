@@ -38,7 +38,7 @@ li{
     --item-shadow: rgb(40, 42, 56) 0px 12px 24px, rgba(52, 57, 68, .9) 0px 12px 24px;
     --button-color-scheme: #497582;
     --hightlight:#916b96;
-    --att:#926878;
+    --att:#926878; 
     --after-under: #FA7070;
     --gray:hsla(0, 0%, 84%, 0.7);
 }
@@ -55,7 +55,7 @@ li{
     --button-color-scheme: #6a9eae;
     --hightlight: #efefef;
     --att:#efefef;
-    --after-under: #e7b25c;
+    --after-under: #FA7070;
     --gray:#000000;
 }
 

@@ -661,6 +661,10 @@
 
   .filter-select-box { display: none; }
 
+  .filter-select-box {
+    position: relative;
+    margin-bottom: 25px;
+}
   .filter-list {
     display: flex;
     justify-content: flex-start;
@@ -669,6 +673,12 @@
     padding-left: 5px;
     margin-bottom: 30px;
   }
+
+  .project-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
+}
 
   .filter-item button {
     color: var(--after-under);
@@ -739,3 +749,23 @@
   padding: 0px;
 }
 
+/* Mặc định: hiển thị desktop, ẩn mobile */
+.desktop-filter {
+  display: flex;
+  gap: 1rem;
+}
+
+.mobile-filter {
+  display: none;
+}
+
+/* Khi màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+  .desktop-filter {
+    display: none;
+  }
+
+  .mobile-filter {
+    display: block;
+  }
+}
