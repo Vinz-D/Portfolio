@@ -12,12 +12,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="contents/css/base.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <!-- Link css -->
 </head>
 
 <body>
+
   <header>
     <div class="header-taskbar" id="header-taskbar">
       <div class="inner-logo">Vinhz</div>
@@ -28,6 +30,17 @@
 
       <div class="inner-tags" id="nav">
         <ul>
+          <!-- <li><a href="#">                                    
+              <div class="inner-button">
+                <button id="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="device-theme">
+                    <path fill-rule="evenodd"
+                      d="M10.6338 0.90947C11.4028 0.189743 12.5981 0.189742 13.3671 0.90947L15.6927 3.0861L18.8763 3.19143C19.9289 3.22625 20.7742 4.07152 20.809 5.1242L20.9144 8.30774L23.091 10.6333C23.8107 11.4023 23.8107 12.5977 23.091 13.3667L20.9144 15.6923L20.809 18.8758C20.7742 19.9285 19.9289 20.7738 18.8763 20.8086L15.6927 20.9139L13.3671 23.0905C12.5981 23.8103 11.4028 23.8103 10.6338 23.0905L8.30819 20.9139L5.12464 20.8086C4.07197 20.7738 3.2267 19.9285 3.19187 18.8758L3.08654 15.6923L0.909913 13.3667C0.190186 12.5977 0.190185 11.4023 0.909912 10.6333L3.08654 8.30774L3.19187 5.1242C3.2267 4.07152 4.07196 3.22625 5.12464 3.19143L8.30819 3.0861L10.6338 0.90947ZM8.58287 5.6352C9.47214 5.22705 10.4609 5 11.5 5C15.366 5 18.5 8.13401 18.5 12C18.5 15.866 15.366 19 11.5 19C10.4609 19 9.47214 18.7729 8.58287 18.3648C8.22768 18.2018 8 17.8468 8 17.456C8 17.0651 8.22768 16.7101 8.58287 16.5471C10.3064 15.7561 11.5 14.0164 11.5 12C11.5 9.98362 10.3064 8.24392 8.58287 7.45289C8.22768 7.28987 8 6.93486 8 6.54404C8 6.15322 8.22768 5.79822 8.58287 5.6352Z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </div>
+            </a></li> -->
           <li><a href="#" class="highlight">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Portfolio</a></li>
@@ -35,6 +48,7 @@
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Components</a></li>
+
         </ul>
         <div class="close-menu" id="close-menu">&times;</div>
       </div>
@@ -83,6 +97,30 @@
                   </div>
                 </div>
                 <div class="inner-contact">
+                  <div class="inner-list">
+                    <ul>
+                      <li style="--i:#a955ff;--j:#ea51ff">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Home</span>
+                      </li>
+                      <li style="--i:#56CCF2;--j:#2F80ED">
+                        <span class="icon"><ion-icon name="videocam-outline"></ion-icon></span>
+                        <span class="title">Video</span>
+                      </li>
+                      <li style="--i:#FF9966;--j:#FF5E62">
+                        <span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
+                        <span class="title">Photo</span>
+                      </li>
+                      <li style="--i:#80FF72;--j:#7EE8FA">
+                        <span class="icon"><ion-icon name="share-social-outline"></ion-icon></span>
+                        <span class="title">Share</span>
+                      </li>
+                      <li style="--i:#ffa9c6;--j:#f434e2">
+                        <span class="icon"><ion-icon name="heart-outline"></ion-icon></span>
+                        <span class="title">Like</span>
+                      </li>
+                    </ul>
+                  </div>
                   <div class="inner-conntact-button">
                     <a href="https://www.facebook.com/profile.php?id=100024116151730" target="_blank">
                       <i class="fa-brands fa-square-facebook"></i>Facebook
@@ -214,14 +252,27 @@
                     <ul class="service-list">
                       <li class="col-sm-12 service-item">
                         <div class="service-icon-box">
-                          <img src="./assets/images/icon-design.svg" alt="design icon">
+                          <img src="./assets/images/icon-app.svg" alt="design icon">
                         </div>
                         <div class="service-content-box">
                           <h4 class="service-item-tittle">
-                            Web Design
+                            Mobile apps
                           </h4>
                           <p class="service-item-text">
-                            The most modern and high-quality design made at a professional level.
+                            Professional development of applications for iOS and Android.
+                          </p>
+                        </div>
+                      </li>
+                      <li class="col-sm-12 service-item">
+                        <div class="service-icon-box">
+                          <img src="./assets/images/icon-dev.svg" alt="design icon">
+                        </div>
+                        <div class="service-content-box">
+                          <h4 class="service-item-tittle">
+                            Web development
+                          </h4>
+                          <p class="service-item-text">
+                            High-quality development of sites at the professional level.
                           </p>
                         </div>
                       </li>
@@ -240,33 +291,20 @@
                       </li>
                       <li class="col-sm-12 service-item">
                         <div class="service-icon-box">
-                          <img src="./assets/images/icon-design.svg" alt="design icon">
+                          <img src="./assets/images/icon-photo.svg" alt="design icon">
                         </div>
                         <div class="service-content-box">
                           <h4 class="service-item-tittle">
-                            Web Design
+                            Photography
                           </h4>
                           <p class="service-item-text">
-                            The most modern and high-quality design made at a professional level.
-                          </p>
-                        </div>
-                      </li>
-                      <li class="col-sm-12 service-item">
-                        <div class="service-icon-box">
-                          <img src="./assets/images/icon-design.svg" alt="design icon">
-                        </div>
-                        <div class="service-content-box">
-                          <h4 class="service-item-tittle">
-                            Web Design
-                          </h4>
-                          <p class="service-item-text">
-                            The most modern and high-quality design made at a professional level.
+                            I make high-quality photos of any category at a professional level.
                           </p>
                         </div>
                       </li>
 
                     </ul>
-                    <section class="testimonials">
+                    <!-- <section class="testimonials">
 
                       <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -358,7 +396,7 @@
 
                       </ul>
 
-                    </section>
+                    </section> -->
 
                   </div>
                 </div>
@@ -657,6 +695,248 @@
         </div>
       </div>
     </div>
+
+    <div class="section-fluid-main">
+      <div class="section-row">
+        <div class="section-col">
+          <div class="section">
+            <div class="section-in">
+              <img src="https://assets.codepen.io/1462889/sl1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="hover-text">
+          <h2>ADU</h2>
+        </div>
+        <div class="section-col">
+          <div class="section">
+            <div class="section-in">
+              <img src="https://assets.codepen.io/1462889/sl2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="hover-text">
+          <h2>Toy Pig</h2>
+        </div>
+        <div class="section-col">
+          <div class="section">
+            <div class="section-in">
+              <img src="https://assets.codepen.io/1462889/sl3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="hover-text">
+          <h2>Shy Portrait</h2>
+        </div>
+        <div class="section-col">
+          <div class="section">
+            <div class="section-in">
+              <img src="https://assets.codepen.io/1462889/sl4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="hover-text">
+          <h2>Skateboard Face</h2>
+        </div>
+        <div class="section-col">
+          <div class="section">
+            <div class="section-in">
+              <img src="https://assets.codepen.io/1462889/sl5.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="hover-text">
+          <h2>Mirror Reflection</h2>
+        </div>
+        <div class="section-col">
+          <div class="section">
+            <div class="section-in">
+              <img src="https://assets.codepen.io/1462889/sl6.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="hover-text">
+          <h2>Funny Bunny</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.7;
+        color: #fff;
+        background-color: #1f2029;
+        margin: 0;
+        padding: 0;
+        overflow-x: none;
+      }
+
+      p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #fff;
+        margin: 0;
+      }
+
+      .section-fluid-main {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        width: calc(100% - 40px);
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1140px;
+        padding: 100px 0;
+      }
+
+      .section-row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+
+      .section-row:hover .section-col {
+        opacity: 0.1;
+      }
+
+      .section-col {
+        position: relative;
+        width: 100%;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        transition: opacity 250ms linear;
+      }
+
+      .section-row .section-col:hover {
+        opacity: 1;
+      }
+
+      .section {
+        position: relative;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
+        padding: 15px;
+      }
+
+      .section-in {
+        position: relative;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .section-in img {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: transform 250ms linear;
+      }
+
+      .section-col:hover .section-in img {
+        transform: scale(1.1) rotate(-3deg);
+      }
+
+      .hover-text {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 100;
+        pointer-events: none;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        text-align: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        mix-blend-mode: difference;
+      }
+
+      .hover-text h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        font-size: 8vw;
+        line-height: 1;
+        color: #fff;
+        opacity: 0;
+        transform: scale(0.8);
+        transition: transform 250ms linear, opacity 250ms ease;
+      }
+
+      .section-col:hover+.hover-text h2 {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+
+      .logo {
+        position: fixed;
+        top: 25px;
+        left: 25px;
+        display: block;
+        z-index: 1000;
+        transition: all 250ms linear;
+      }
+
+      .logo img {
+        height: 26px;
+        width: auto;
+        display: block;
+        transition: filter 250ms 700ms linear;
+      }
+
+
+      @media (max-width: 767px) {
+        .section-col {
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+
+        .hover-text h2 {
+          font-size: 12vw;
+        }
+      }
+    </style>
+
+
+
+
   </main>
   <script src="contents/js/animate.js"></script>
   <script src="contents/js/bootstrap.bundle.min.js"></script>

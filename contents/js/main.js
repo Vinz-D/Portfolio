@@ -8,7 +8,6 @@ function hamOne() {
   // Toggle giữa 'light' và 'dark'
   const newScheme = current === 'light' ? 'dark' : 'light';
   html.setAttribute("data-color-scheme", newScheme);
-  // document.querySelectorAll(".avatar").src = "/image/avatar2.jpg";
 
   const images = document.querySelectorAll(".avatar"); // class chung
     images.forEach(img => {

@@ -10,7 +10,6 @@
  --transition-2: 0.5s ease-in-out;
 }
 body{
-    margin: 0;
     font-family: var(--font);
     background-image:var(--background-image);
     background-repeat: no-repeat;
@@ -18,7 +17,6 @@ body{
     background-position: center bottom;
     background-attachment: fixed; 
     justify-content: center;
-    overflow: visible;
 }
 a {
   text-decoration: none;
